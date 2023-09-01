@@ -21,6 +21,7 @@ print(type(3.56))
 #print(n)
 # Se eu respoder com algo vai dar True, se nada vai ser False
 '''
+
 n = input('Digte algo: ')
 print('é um número:' ,n.isnumeric())
 print('é uma letra:',n.isalpha())
