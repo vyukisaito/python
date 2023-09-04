@@ -22,20 +22,19 @@ print(type(3.56))
 # Se eu respoder com algo vai dar True, se nada vai ser False
 '''
 
-'''
+
 n = input('Digte algo: ')
+print('O tipo primitivo é:' ,type(n))
 print('é um número:' ,n.isnumeric())
 print('é uma letra:',n.isalpha())
-print('é um letraNúmero:',n.isalnum())
+print('está só com letra maisculua?:',n.isupper())
+print('está em letra minuscula?:' ,n.islower())
 print('é um espaço:', n.isspace())
 print('é um número deciaml:', n.isdecimal())
 # checar depois
-'''
 
-n = int(input('Digite um valor: '))
-n2 = int(input('Digite outro valor: '))
-s = n + n2
-print('A soma dos valores é: {}' .format(s))
+nombre = input('Qual o seu nome? ')
+print('Prazer em te conhecer {:^20}!' .format(nombre))
 
 
 '''
