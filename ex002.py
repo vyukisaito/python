@@ -33,7 +33,7 @@ print('Sua nota em math foi: {} e em português foi: {} e sua média foi: {} \n'
 
 #DESAFIO 008
 print('DESAFIO 008')
-metros = float(int(input('Digite um valor em metros: ')))
+metros = float(input('Digite um valor em metros: '))
 cm = metros * 100
 ml = metros * 1000
 print('Uma corda possui {} metros, em centimetros seria {} e em milimetros seria {} \n' .format(metros, cm, ml))
@@ -63,8 +63,8 @@ print('Com {}R$ você pode comprar {:.1f} dolares \n' .format(reais, dolar))
 
 #DESAFIO 011
 print('DESAFIO 011')
-altura = float(int(input('Qual a altura da sua parede (em métros)? ')))
-largura = float(int(input('Qual a largura da sua parede (em métros)? ')))
+altura = float(input('Qual a altura da sua parede (em métros)? '))
+largura = float(input('Qual a largura da sua parede (em métros)? '))
 #utiliza float pois nesse números pode ter 1.5
 area = altura * largura
 tinta = area / 2
@@ -72,14 +72,25 @@ print('A area da sua parede é {}, e precisará de {:.1f} litros de tinta para p
 
 #DESAFIO 012
 print('DESAFIO 012')
-preco = int(input('Coloque um preço de um produto: '))
-desconto = preco * 0.05 
-descontoCompleto = preco - desconto
-print('O seu produto custa: {}, agora com 5 de desconto: {:.1f} \n' .format(preco, descontoCompleto))
+preco = float(input('Coloque um preço de um produto: '))
+desconto = preco - (preco * 0.05)
+print('O seu produto custa: R${:.1f}, agora com 5% de desconto: {:.2f} \n' .format(preco, desconto))
 
 #DESAFIO 013
 print('DESAFIO 013')
-salario = int(input('Coloque o seu salário: '))
-aumento = salario * 0.15 
-aumentoCompleto = salario + aumento
-print('O seu salário é: {}, agora com 15 de aumento: {:.1f} \n' .format(salario, aumentoCompleto))
+salario = float(input('Coloque o seu salário: '))
+aumento = salario + (salario * 0.15) 
+print('O seu salário é: {}, agora com 15% de aumento: R${:.2f} \n' .format(salario, aumento))
+
+#DESAFIO 014
+print('DESAFIO 014')
+celsius = float(input('Informe a temperatura em Cº: '))
+faren = celsius * (9/5) + 32
+print('A temperatura de {}ºC conrresponde a {}ºF \n' .format(celsius, faren))
+
+#DESAFIO 015
+print('DESAFIO 015')
+dias = int(input('Quantos dias você ficou com o carro? '))
+km = float(input('Quantos KM você percorreu? '))
+aluguel = (dias * 60) + (km * 0.15)
+print('O seu alguel vai custar R${:.2f}' .format(aluguel))
