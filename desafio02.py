@@ -34,5 +34,20 @@ quatro = str(input('Quarto aluno: '))
 cinco = str(input('Quinto aluno: '))
 lista = [um , dois, tres, quatro, cinco]
 sorteio = random.choice(lista)
-print('O Aluno escolhido foi: {}' .format(sorteio))
+print('O Aluno escolhido foi: {}\n' .format(sorteio))
+
+#DESAFIO 020
+print('Desafio 020')
+n1 = str(input('Primeiro aluno: '))
+n2 = str(input('Segundo aluno: '))
+n3 = str(input('Terceiro aluno: '))
+n4 = str(input('Quarto aluno: '))
+n5 = cinco = str(input('Quinto aluno: '))
+lista2 = [n1, n2, n3, n4, n5]
+random.shuffle(lista2)
+print('Essa será a ordem de apresentação: {}' .format(lista2))
+
+#DESAFIO 021
+print('Desafio 021')
+# visitar a pasta teste
 
