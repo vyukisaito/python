@@ -22,6 +22,17 @@ print('O ângulo de {} tem o SENO de {}' .format(angulo, sen))
 cos = math.cos(math.radians(angulo))
 print('O ângulo de {} tem o COSSENO de {}' .format(angulo, cos))
 tan = math.tan(math.radians(angulo))
-print('O ângulo de {} tem o TANGENTE de {}' .format(angulo, tan))
+print('O ângulo de {} tem o TANGENTE de {}\n' .format(angulo, tan))
 
+#DESAFIO 019
+print('Desafio 019')
+import random
+um = str(input('Primeiro aluno: '))
+dois = str(input('Segundo aluno: '))
+tres = str(input('Terceiro aluno: '))
+quatro = str(input('Quarto aluno: '))
+cinco = str(input('Quinto aluno: '))
+lista = [um , dois, tres, quatro, cinco]
+sorteio = random.choice(lista)
+print('O Aluno escolhido foi: {}' .format(sorteio))
 
