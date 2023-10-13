@@ -45,9 +45,17 @@ n4 = str(input('Quarto aluno: '))
 n5 = cinco = str(input('Quinto aluno: '))
 lista2 = [n1, n2, n3, n4, n5]
 random.shuffle(lista2)
-print('Essa será a ordem de apresentação: {}' .format(lista2))
+print('Essa será a ordem de apresentação: {}\n' .format(lista2))
 
 #DESAFIO 021
-print('Desafio 021')
+print('Desafio 021\n')
+
 # visitar a pasta teste
 
+#DESAFIO 022
+print('Desafio 022')
+nome = input('Digite se nome completo: ')
+print('Seu nome em maisculas é: {}' .format(nome.upper()))
+print('Seu nome em minusculas é: {}' .format(nome.lower()))
+print('Seu nome tem ao todo:', (len(nome) - nome.count(' ')))
+print('Seu primeiro nome tem {} letras' .format(nome.find(' ')))

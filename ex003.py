@@ -17,3 +17,4 @@ print(frase.count('o')) # vai contar quanto 'o' tem
 print(len(frase)) # vai contar quantos caracter tem contando com espaço
 frase = frase.replace('Clube', 'Seleção')
 print(frase)
+
