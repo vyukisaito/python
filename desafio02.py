@@ -58,4 +58,16 @@ nome = input('Digite se nome completo: ')
 print('Seu nome em maisculas é: {}' .format(nome.upper()))
 print('Seu nome em minusculas é: {}' .format(nome.lower()))
 print('Seu nome tem ao todo:', (len(nome) - nome.count(' ')))
-print('Seu primeiro nome tem {} letras' .format(nome.find(' ')))
+print('Seu primeiro nome tem {} letras\n' .format(nome.find(' ')))
+
+#DESAFIO 023
+print('Desafio 023')
+num = int(input('Informe um númeor: '))
+u = num // 1 % 10
+d = num // 10 % 10
+c = num // 100 % 10
+m = num // 1000 % 10
+print('Unidade: {}' .format(u))
+print('Dezena: {}' .format(d))
+print('Centena: {}' .format(c))
+print('Milhar: {}' .format(m))
