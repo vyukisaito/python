@@ -70,4 +70,9 @@ m = num // 1000 % 10
 print('Unidade: {}' .format(u))
 print('Dezena: {}' .format(d))
 print('Centena: {}' .format(c))
-print('Milhar: {}' .format(m))
+print('Milhar: {}\n' .format(m))
+
+#DESAFIO 024
+print('Desafio 024')
+cid = str(input('Em que cidade você nasceu? ')).strip()
+print(cid[:5].upper() == 'SANTO')
