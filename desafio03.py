@@ -15,4 +15,15 @@ print('Desafio 026')
 n = str(input('Digite seu nome completo: ')).strip()
 nome = n.split()
 print('Seu primeiro nome é {}' .format(nome[0]))
-print('Seu último nome é {}' .format(nome[len(nome) -1 ]))
+print('Seu último nome é {}\n' .format(nome[len(nome) -1 ]))
+
+#DESAFIO 027
+print('Desafio 027')
+import random
+lista = [0, 1, 2, 3, 4, 5]
+num = random.choice(lista)
+res = int(input('Escolha um número entre 0 a 5: '))
+if res == num:
+    print('Parabéns era o número {}' .format(res))
+else: 
+    print('o ce não acertou')
