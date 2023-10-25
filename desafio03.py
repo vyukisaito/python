@@ -17,13 +17,38 @@ nome = n.split()
 print('Seu primeiro nome é {}' .format(nome[0]))
 print('Seu último nome é {}\n' .format(nome[len(nome) -1 ]))
 
-#DESAFIO 027
-print('Desafio 027')
+#DESAFIO 028
+print('Desafio 028')
 import random
 lista = [0, 1, 2, 3, 4, 5]
 num = random.choice(lista)
 res = int(input('Escolha um número entre 0 a 5: '))
 if res == num:
-    print('Parabéns era o número {}' .format(res))
+    print('Parabéns era o número {} \n' .format(res))
+elif res > 5 :
+    print('São números entre 0 a 5\n')
 else: 
-    print('o ce não acertou')
+    print('o ce não acertou\n')
+
+#DESAFIO 029
+print('Desafio 029')
+velocidade = int(input('Qauntos KM você está correndo? '))
+if velocidade > 80:
+    print('Você está andando {}KM a mais, a sua multa será: R${} \n' .format(velocidade-80, (velocidade-80)*7))
+else: print('Parabéns! Você está andando na velocidade adequada \n ')
+
+#DESAFIO 030
+print('Desafio 030')
+numero = int(input('Escreva um número inteiro: '))
+if numero % 2 == 0:
+    print('O número é par \n')
+else:
+    print('O número é impar \n')
+
+#DESAFIO 030
+print('Desafio 030')
+distancia = int(input('Qual a distância da sua viagem? '))
+if distancia < 201:
+    print('O preço para essa viagem será R${}' .format(distancia*0.50))
+else:
+    print('A sua viagem irá custar R${}' .format(distancia*0.45))
