@@ -45,10 +45,18 @@ if numero % 2 == 0:
 else:
     print('O número é impar \n')
 
-#DESAFIO 030
-print('Desafio 030')
+#DESAFIO 031
+print('Desafio 031')
 distancia = int(input('Qual a distância da sua viagem? '))
 if distancia < 201:
-    print('O preço para essa viagem será R${}' .format(distancia*0.50))
+    print('O preço para essa viagem será R${}\n' .format(distancia*0.50))
 else:
-    print('A sua viagem irá custar R${}' .format(distancia*0.45))
+    print('A sua viagem irá custar R${}\n' .format(distancia*0.45))
+
+#DESAFIO 032
+print('Desafio 032')
+ano = int(input('Digite um ano: '))
+if (ano%4 == 0 and ano%100!=0) or (ano%400==0):
+    print('O ano é bissexto\n')
+else: 
+    print('O ano não é bissexto\n')
