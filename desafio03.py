@@ -28,13 +28,13 @@ if res == num:
 elif res > 5 :
     print('São números entre 0 a 5\n')
 else: 
-    print('o ce não acertou\n')
+    print('VENCI! Eu pensei no número {} e você no {} \n' .format(num, res))
 
 #DESAFIO 029
 print('Desafio 029')
 velocidade = int(input('Qauntos KM você está correndo? '))
 if velocidade > 80:
-    print('Você está andando {}KM a mais, a sua multa será: R${} \n' .format(velocidade-80, (velocidade-80)*7))
+    print('Você está andando {}KM a mais, a sua multa será: R${:.2f} \n' .format(velocidade-80, (velocidade-80)*7))
 else: print('Parabéns! Você está andando na velocidade adequada \n ')
 
 #DESAFIO 030
