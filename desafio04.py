@@ -80,3 +80,48 @@ elif segundo_num == primeiro_num:
     print("Os valores são iguais")
 else:
     print("Valor INVÁLIDO")
+
+#DESAFIO 039
+print('Desafio 039')
+from datetime import date
+atual = date.today().year
+nascimento = int(input("Ano de nascimento: "))
+idade = 2023 - nascimento
+print("Quem nasceu em {} tem {} anos em {}." .format(nascimento, idade, atual))
+if idade < 18:
+    print("Ainda faltam {} anos para o alistamento " .format(18-idade))
+    print("Seu alistamento será em {}".format(2023+(18-idade)))
+elif idade > 18:
+    print("Você deveria ter se alistado há {} anos, em {}" .format(idade-18, 2023-(idade-18)))
+elif idade == 18:
+    print("Você deveria fazer o alistamento IMEDIATAMENTE")
+
+#DESAFIO 040
+print('Desafio 040')
+primeira_nota = float(input("Primeira nota: "))
+segunda_nota = float((input("Segunda nota: ")))
+media_nota = (primeira_nota + segunda_nota) / 2
+print("Tirando {} e {}, a média do aluno é: {}" .format(primeira_nota, segunda_nota, media_nota))
+if media_nota >= 7:
+    print("O aluno PASSOU com sucesso!")
+elif 7 > media_nota >= 5:
+    print("O aluno está de RECUPERAÇÃO!")
+elif media_nota < 5: 
+    print("O aluno está REPROVADO!")
+
+#DESAFIO 041
+print('Desafio 041')
+from datetime import date
+ano_nascimento = int(input("Digite se ano de nascimento: "))
+idade_atleta = date.today().year - ano_nascimento
+print("O atleta tem {} anos" .format(idade_atleta))
+if idade_atleta <= 9:
+    print("Classificação: MIRIM")
+elif idade_atleta <= 14:
+    print("Classificação: INFANTIL")
+elif idade_atleta <= 19:
+    print("Classificação: JÛNIOR")
+elif idade_atleta <= 25:
+    print("Classificação: SÊNIOR")
+elif idade_atleta > 25:
+    print("Classificação: MASTER")
