@@ -19,8 +19,18 @@ for i in range(1, 501, 2):
         cont = cont + 1
         soma += i
 print("A soma é {} de todos os {} valores" .format(soma, cont))
-''' 
 # Desafio 49
 num = int(input("Digite um numero inteiro: "))
 for i in range(1, 11):
     print("{} x {} = {}" .format(i, num, num * i))
+''' 
+
+# Desafio 49
+cont = 0
+soma = 0
+for i in range(1, 7):
+    num = int(input("Digite o {} valor: ".format(i)))
+    if num % 2 == 0:
+        soma += num
+        cont += 1
+print("Você informou {} números e a soma foi {}" .format(cont,  soma))
