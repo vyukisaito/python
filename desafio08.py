@@ -15,7 +15,7 @@ while c > 1:
 print(1, end=" ")
 print("O resutado do fatorial de {} é {}".format(num, f1))
 '''
-
+# Desafio 61
 print("    10 Termos de uma PA")
 print("="*30)
 primeiro = int(input("Primeiro Termo: "))
