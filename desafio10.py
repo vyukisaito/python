@@ -84,7 +84,6 @@ for i in numeros:
         if menor > i:
             menor = i
 print(f"\nO maior número foi {max(numeros)} e o menor foi {min(numeros)}")
-'''
 
 # Desafi 75:
 num = (int(input("Digite um número: ")), int(input("Digite um número: ")), int(input("Digite mais um número: ")), int(input("Digite o ultimo número: ")))
@@ -105,3 +104,19 @@ for i in num:
         par = i
         print(i, end=" ")
 
+# Desafio 76
+produtos = ('Lápis', 1.75, 'Borracha', 2.00, 'Caderno', 23.75, 'Mochila', 123.43)
+for pos in range(0, len(produtos)):
+    if pos % 2 == 0:
+        print(f'{produtos[pos]:.<30}', end="")
+    else: 
+        print(f'R${produtos[pos]:>6.2f}')
+'''
+
+# Desafio 77:
+palavras = ('Palmeiras', 'Botafogo', 'Grêmio', 'Bragantino', 'Flamengo', 'Athletico', 'Fluminensem', 'Corinthians', 'Fortaleza', 'Internacional', 'Santos', 'Vasco', 'Bahia', 'Cruzeiro',  'Coritiba')
+for i in palavras:
+    print(f'\nNa palavra {i.upper()} temos: ', end="")
+    for palavras in i:
+        if palavras.lower() in 'aeiou':
+            print(palavras, end=" ")
