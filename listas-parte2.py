@@ -125,7 +125,24 @@ for i in range(1, jogos+1):
     sleep(1)
 '''
 
-aluno = [ ['caio',[12]], ['Maria',[12]] ]
-teste = ['caio',[23]]
-aluno.append(teste)
-print(aluno)
+dados = list()
+while True:
+    nome = str(input("Nome: "))
+    nota1 = float(input("Nota 1: "))
+    nota2 = float(input("Nota 2: "))
+    media = (nota1 + nota2) / 2
+    dados.append([nome, [nota1, nota2], media])
+    resp = str(input("Quer continuar? ")).strip().upper()[0]
+    if resp in 'N':
+        break
+print(f'{"No.":<4}{"NOME":<10}{"MÉDIA":>8}')
+for i in range(0, len(dados)):
+    print(f'{i:<4}{dados[i][0]:<10}{dados[i][2]:>8}')
+while True:
+    mostrar = int(input("Mostrar dados de qual aluno (999 interrompe) "))
+    if mostrar in range(len(dados)):
+        print(f"As notas da {dados[mostrar][0]} são: {dados[mostrar][1]}")
+    elif mostrar == 999:
+        break
+    else:
+        print('Valor incorreto. Tente novamente')
