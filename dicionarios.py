@@ -148,7 +148,6 @@ print("Listas das pessoas que estão acima da média: ")
 for i in range(0, len(galera)):
     if galera[i]['idade'] > media:
         print(f"Nome = {galera[i]['nome']}; idade = {galera[i]['idade']}; sexo = {galera[i]['sexo']}")
-'''
 
 # Desafio 95
 jogadores = list()
@@ -177,7 +176,7 @@ while True:
 print(f'cod {"nome":<9}{"gols":<13}total')
 print('-------------------------------------------------------------------')
 for i in range(0, len(jogadores)):
-    print(f"{i} {jogadores[i]['nome']:<10}{jogadores[i]['gols']:<10}{jogadores[i]['total']}")
+    print(f"{i} {jogadores[i]['nome']:<10}{jogadores[i]['gols']}{'':<7}{jogadores[i]['total']}")
 print('-------------------------------------------------------------------')
 while True:
     while True:
@@ -191,13 +190,13 @@ while True:
     if mostrar == 999:
         break
     print(f'-- DADOS DO JOGADOR {jogadores[mostrar]["nome"]}: ')
-    for i in range(0, partidas+1):
+    for i in range(0, partidas):
+        #print(i)
         if i == partidas:
-            i += partidas
-            print(f"  Na partida {i-1}, fez {jogadores[i-2]['gols']}")
+            #i += partidas
+            print(f"  Na partida {i-1}, fez {jogadores[mostrar]['gols'][i-1]} gol(s)")
         else:
-            print(f"  Na partida {i}, fez {jogadores[i-1]['gols']}")
-            
-
-
-
+            #print(i)
+            #print(jogadores[i])
+            print(f"  Na partida {i}, fez {jogadores[mostrar]['gols'][i]} gol(s)")
+'''
