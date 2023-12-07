@@ -44,7 +44,6 @@ def escreva(msg):
     print(f'  {msg}')
     print('-'*tamanho)
 escreva('TEste')
-'''
 
 # Desafio 98
 print('Contagem de 1 até 10 em 1 e 1')
@@ -69,3 +68,25 @@ inicio = int(input("Início: "))
 fim = int(input("Fim: "))
 passo = int(input("Passo: "))
 calc(inicio, fim, passo)
+'''
+
+# Desafio 99
+
+
+def maior(*num):
+    c = maior = 0
+    print(f'Analisando os valores passados')
+    for i in num:
+        c += 1
+        if c == 1:
+            maior = i
+        else:
+            if i > maior:
+                maior = i
+
+        print(i, end=' ')
+
+    print(f'Foram os {len(num)} valores informados, o maior é o {maior}')
+
+
+maior(1, 2, 9, 4, 5, 6,11, 2)
